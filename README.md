@@ -13,14 +13,6 @@ This project develops a predictive model for automobile theft likelihood in Toro
 - Classification model achieved 72% accuracy in identifying high-risk hours
 - Random Forest algorithms provide the best performance for both regression and classification tasks
 
-## 👨‍💻 Team Members
-
-- Antonio Chung - 301316341
-- Carlo Toledo - 301296658
-- Ignacio Arce - 301264338
-- Aiden Ireland - 301219359
-- Sebastian Tipan - 301264991
-
 ## 📊 Data Exploration
 
 ### Dataset Details
