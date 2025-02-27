@@ -1,0 +1,82 @@
+body {
+  font-family: Nunito, sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #333;
+}
+
+#prediction-form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 20px;
+  border: none;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#prediction-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; 
+}
+
+#prediction-form input,
+#prediction-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#prediction-form input:focus,
+#prediction-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #f0f8ff;
+}
+
+#prediction-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Makes the button span the full width of the form */
+}
+
+#prediction-result, #jsonResponse, #jsonBody {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center; 
+  font-size: 18px; 
+  color: #333; 
+  white-space: pre-wrap;
+}
+
+/* Datalist Styling */
+#location-suggestions {
+  position: absolute;
+  max-height: 150px; /* Limit dropdown height */
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#location-suggestions option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#location-suggestions option:hover {
+  background-color: #f0f0f0;
+}

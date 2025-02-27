@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Theft Prediction</title>
+  <link rel="stylesheet" href="style.css"> </head>
+<body>
+  <h1>Predict Auto Theft</h1>
+  <form id="prediction-form">
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <label for="report_hour">Hour:</label>
+    <select id="hour_value" name="HOUR_VALUE" required>
+      <option value="1">1:00</option>
+      <option value="2">2:00</option>
+      <option value="3">3:00</option>
+      <option value="4">4:00</option>
+      <option value="5">5:00</option>
+      <option value="6">6:00</option>
+      <option value="7">7:00</option>
+      <option value="8">8:00</option>
+      <option value="9">9:00</option>
+      <option value="10">10:00</option>
+      <option value="11">11:00</option>
+      <option value="12">12:00</option>
+    </select>
+    <select id="hour_period" name="HOUR_PERIOD" required>
+      <option value="AM">AM</option>
+      <option value="PM">PM</option>
+    </select><br><br>
+
+    <label for="lat">Latitude (WGS84):</label>
+    <input type="number" id="lat" name="LAT_WGS84" step="any" required><br><br>
+
+    <label for="long">Longitude (WGS84):</label>
+    <input type="number" id="long" name="LONG_WGS84" step="any" required><br><br>
+    
+    <button type="submit">Predict</button>
+  </form>
+
+  <div id="prediction-result"></div>
+  <div id="jsonBody"></div>
+  <div id="jsonResponse"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
